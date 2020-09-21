@@ -1,0 +1,309 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: "Lato", sans-serif;
+
+}
+
+
+
+/* hero */
+.image-container{
+    min-height: 100vh;
+    background-image: url(Images/contact_us.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 15px;
+}
+
+/* header */
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.header-container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ header .brand-name img{
+     width: 120px;
+     height: 120px;
+     width: 100%;
+ }
+
+ header .row{
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+/* navigation */
+.navbar ul{
+    list-style: none;
+    margin: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+    padding: 40px 0px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 72px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+}
+
+
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    transition: all .5s ease;
+}
+
+ .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;
+
+}
+
+.navbar ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+
+
+.home .full-screen{
+    min-height: 100vh;
+}
+
+.home .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .home-content .block{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 35px;
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.home .home-content .block .headline h1{
+    font-size: 15em;
+    font-family: "Montserrat";
+}
+
+/* Contact Us */
+
+
+.contact-us .headline h1{
+    font-family: "Montserrat";
+    font-size: 3em;
+}
+
+.contact-us .headline p{
+    font-size: 1.5em;
+}
+
+.contact-us{
+    padding: 180px 0;
+}
+
+.contact-box{
+    background: #ffffff;
+    display: flex;
+   
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 120px 60px;
+    border: 1px solid #0E1D28;
+    height: 800px;
+    width: 120px;
+    font-size: 1.2em;
+}
+
+.contact-left h3{
+    color: #0E1D28;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    height: 800px;
+    width: 120px;
+    padding: 120px 60px;
+    background: #0E1D28;
+    color: #fff;
+    border: 1px solid #0E1D28;
+    font-size: 1.2em;
+}
+
+.logo-title{
+    display: flex;
+    align-items: center;
+}
+
+.logo-title img{
+    height: 150px;
+    width: auto;
+}
+
+.logo-title h3{
+    font-size: 1.5em;
+}
+
+.contact-right h3{
+    font-size: 2em;
+}
+
+.container h1{
+    margin-bottom: 10px;
+}
+
+.container p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px
+}
+
+label{
+    margin-bottom: 10px;
+    display: block;
+    color: #0E1D28;
+}
+
+button{
+    background: #0E1D28;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius:30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+footer{
+    background: #0E1D28;
+    min-height: 150px;
+    display: flex;
+    
+}
+
+footer .row{
+    min-width: 1600px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .logo p{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+footer .row .social-links{
+    color: #ffffff;
+}
+
+footer .row .social-links a{
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1px;
+    transition: all .5s ease;
+}
+
+footer .row .social-links a i{
+    font-size: 25px;
+}

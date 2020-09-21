@@ -1,0 +1,348 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,300;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+/* hero */
+.image-container{
+    min-height: 100vh;
+    background-image: url(Images/socials.jpg);
+    background-blend-mode: saturation;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 15px;
+}
+
+/* header */
+header{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.header-container{
+    max-width: 1600px;
+    margin: auto;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ header .brand-name img{
+     width: 120px;
+     height: 120px;
+     width: 100%;
+ }
+
+ header .row{
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+.navbar ul{
+    list-style: none;
+    margin: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+    padding: 40px 0px;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin-left: 35px;
+}
+
+.navbar ul li a{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 72px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+
+}
+
+
+header .navbar ul li a::before{
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    width: 0%;
+    position: absolute;
+    left: 0px;
+    bottom: 10px;
+    transition: all .5s ease;
+}
+
+ .navbar ul li a:hover::before{
+    width: 100%;
+    left: 0;
+
+}
+
+.navbar ul li a.active::before{
+    width: 100%;
+    left: 0;
+}
+
+
+.home .full-screen{
+    min-height: 100vh;
+}
+
+.home .home-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.home .home-content .block{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 35px;
+    margin-top: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.home .home-content .block .headline h1{
+    font-size: 15em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* cards */
+
+.cards{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 30px;
+    min-height: 70vh;
+}
+
+.cards h1{
+    font-size: 5em;
+    margin: 0 0 30px 0;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+    color: #0E1D28;
+}
+
+
+.services{
+    display: flex;
+    align-items: center;
+}
+.content{
+    color: #1d1d21;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    transition: all .3s ease;
+    min-height: 400px;
+}
+
+.content > *{
+    flex: 1 1 100%;
+}
+
+.content a{
+    margin: 22px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #eeeeee;
+    padding: 15px 0;
+    border-radius: 25px;
+    transition: .3s ease;
+    max-height: 50px;
+}
+
+.content-1 .fa-facebook{
+    color: #3b5998;
+}
+
+.content-2 .fa-twitter{
+    color: #1da1f2;
+}
+
+.content-3 .fa-instagram{
+    color: #e1306c;
+}
+
+.content-1 a{
+    background: #3b5998;
+}
+
+.content-2 a{
+    background: #1da1f2;
+}
+.content-3 a{
+    background: #e1306c;
+}
+
+.content .fa{
+    font-size: 70px;
+    margin: 16px 0;
+}
+
+.content:hover {
+    color: white;
+}
+
+.content:hover .fa{
+    color: white;
+}
+
+.content:hover a{
+    border-color: white;
+    background: white;
+}
+
+ .content-1:hover{
+     border-color:  #3b5998;
+     background:  #3b5998;
+ }
+
+ .content-1:hover a{
+    color: #3b5998;
+}
+
+ .content-2:hover{
+    border-color:  #1da1f2;
+    background:  #1da1f2;
+}
+.content-2:hover a{
+    color: #1da1f2;
+}
+
+.content-1:hover a{
+    color: #1da1f2;
+}
+
+.content-3:hover a{
+    color:  #1da1f2;
+}
+
+.content-3:hover{
+    border-color:  #e1306c;
+    background:  #e1306c;
+}
+
+.content-3:hover a{
+    color: #e1306c;
+}
+
+.content-4:hover{
+    border-color:  #d44638;
+    background:  #d44638;
+}
+
+.content-4:hover a{
+    color: #d44638;
+}
+
+.content h2{
+    font-size: 30px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+}
+
+.contet p{
+    font-size: 17px;
+}
+
+
+
+.content a:hover{
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 900px){
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* footer */
+footer{
+    background: #0E1D28;
+    min-height: 150px;
+    display: flex;
+    
+}
+
+footer .row{
+    min-width: 1600px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+}
+
+footer .logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .logo p{
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+footer .row .social-links{
+    color: #ffffff;
+}
+
+footer .row .social-links a{
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 1px;
+    transition: all .5s ease;
+}
+
+footer .row .social-links a i{
+    font-size: 25px;
+}
