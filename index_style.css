@@ -130,12 +130,16 @@ header .navbar ul li a::before{
     font-size: 15em;
     font-family: 'Montserrat', sans-serif;
 }
-.home .home-content .block .body h4{
+.home  .body h4{
     font-size: 2em;
 }
 
-.home .home-content .block .body h4 span{
+.home .body h4 span{
     font-style: italic;
+}
+
+.home .body h4.quote{
+    font-weight: 400;
 }
 
 /* resources */
@@ -188,7 +192,6 @@ header .navbar ul li a::before{
 
 .type .inner-box{
     margin-left: 120px;
-    margin-top: ;
     font-size: 36px;
 }
 
